@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Grade Calculator</title>
+
+    <!-- PyScript -->
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h1>Student Grade Calculator</h1>
+
+    <div class="form-box">
+        <label>First Name:</label>
+        <input type="text" id="fname" placeholder="Enter your first name"><br>
+
+        <label>Last Name:</label>
+        <input type="text" id="lname" placeholder="Enter your last name"><br><br>
+
+        <label>Science:</label>
+        <input type="number" id="sciGrade" placeholder="Grade"><br>
+        <label>Math:</label>
+        <input type="number" id="mathGrade" placeholder="Grade"><br>
+        <label>English:</label>
+        <input type="number" id="engGrade" placeholder="Grade"><br>
+        <label>ICT:</label>
+        <input type="number" id="ictGrade" placeholder="Grade"><br>
+        <label>Filipino:</label>
+        <input type="number" id="filGrade" placeholder="Grade"><br>
+        <label>MAPEH:</label>
+        <input type="number" id="mapehGrade" placeholder="Grade"><br>
+        <label>CAT:</label>
+        <input type="number" id="catGrade" placeholder="Grade"><br>
+        <label>TLE:</label>
+        <input type="number" id="tleGrade" placeholder="Grade"><br><br>
+
+        <button py-click="calculate_grade">Calculate</button>
+        <button type="button" onclick="window.location.reload()">Refresh</button>
+    </div>
+
+    <div id="output" class="output-box"></div>
+    
+    <py-script src="main.py"></py-script>
+</body>
+</html>
